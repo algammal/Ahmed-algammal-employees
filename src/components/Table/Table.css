@@ -1,0 +1,18 @@
+.tableItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item {
+    border:1px solid #ccc;
+    padding: 5px;
+    min-width: 20%;
+}
+.tableHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tableHeader .item{
+    color:blue;
+}
