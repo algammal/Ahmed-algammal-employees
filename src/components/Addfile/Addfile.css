@@ -1,5 +1,5 @@
 .buttonContainer{
-    width: 83.8%;
+    width: 83.3%;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -7,7 +7,7 @@
     height: 51px;
     background-color: #414144;
     color: #fff;
-    border: 0px;
+    border: 1px solid #414144;
 }
 .buttonContainer label{
     margin-right: 11px;
