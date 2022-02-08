@@ -1,0 +1,31 @@
+.tableItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item {
+    border:1px solid #ccc;
+    padding: 5px;
+    min-width: 20%;
+    border-right: 0px;
+    border-top:0px;
+}
+.item:last-child {
+    border-right: 1px solid #ccc;
+}
+.tableHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tableHeader .item{
+    color:#5670a9;
+}
+.tableItems .item {
+    color: #414144;
+    font-size: 14px;
+}
+.maxEmp .item {
+    color: #fff;
+    background-color: #0089ff;
+}

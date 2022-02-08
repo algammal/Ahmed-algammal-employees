@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import Addfile from "./components/Addfile/Addfile"
+import Table from "./components/Table/Table"
 import './App.css';
+import { useState } from 'react'
+import Papa from 'papaparse';
 
 function App() {
+  const [upload, uploadUpdate] = useState([]);
+
+  const dataChange = (event) => {
+    let file = event.target.files[0]
+    if (file instanceof Blob) {
+      Papa.parse(file, {
+        complete: function (results) {
+          uploadUpdate(results.data)
+        }
+      });
+    }
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        Employees
       </header>
+      <div className='App-container'>
+        <Addfile csvFile={dataChange} />
+        <Table payload={upload} />
+      </div>
     </div>
   );
 }
