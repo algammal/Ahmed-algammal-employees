@@ -1,9 +1,13 @@
 .App-header{
-  background-color: aqua;
-  min-height: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
+  background-color: #5670a9;
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #fff;
+}
+.App-container{
+  margin-top: 35px;
 }

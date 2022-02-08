@@ -14,5 +14,10 @@
     align-items: center;
 }
 .tableHeader .item{
-    color:blue;
+    color:#5670a9;
+}
+.tableItems .item {
+    border-top: 0px;
+    color: #414144;
+    font-size: 14px;
 }
