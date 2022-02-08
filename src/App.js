@@ -5,16 +5,14 @@ import { useState } from 'react'
 import Papa from 'papaparse';
 
 function App() {
-  const [upload, uploadUpdate] = useState({});
+  const [upload, uploadUpdate] = useState([]);
 
   const dataChange = (event) => {
     let file = event.target.files[0]
     if (file instanceof Blob) {
       Papa.parse(file, {
         complete: function (results) {
-          console.log("Finished:", results.data);
           uploadUpdate(results.data)
-
         }
       });
     }

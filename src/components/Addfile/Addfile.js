@@ -1,8 +1,6 @@
 import './Addfile.css'
 
-
 const Addfile = (props) => {
-
     return (
         <div className="buttonContainer">
             <label htmlFor="csv">Import "CSV" file</label>
